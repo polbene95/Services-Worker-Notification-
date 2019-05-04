@@ -34,6 +34,6 @@ app.post('/subscribe', (req,res) => {
     .catch(err => console.error(err))   
 })
 
+const PORT = process.env.PORT || 5000
 
-
-app.listen(5000, () => console.log('Server runing in port: ' + 5000))
+app.listen(5000, () => console.log('Server runing in port: ' + PORT))
